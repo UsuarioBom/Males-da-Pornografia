@@ -1,0 +1,96 @@
+:root {
+  --primary: #5a4bff;
+  --light: #f4f6ff;
+  --dark: #1e1e2f;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--light);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.hero {
+  padding: 140px 20px 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #5a4bff, #8f94fb);
+  color: white;
+}
+
+.container {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.grafico-box {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.destaque {
+  background: #eef0ff;
+}
+
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--primary);
+  color: white;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background: white;
+  color: var(--primary);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 10px;
+  }
+}
